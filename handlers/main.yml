@@ -42,3 +42,5 @@
 
 - name: Reboot
   ansible.builtin.reboot:
+  when:
+    - grub_reboot | bool
